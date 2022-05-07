@@ -115,4 +115,7 @@ def main():
         if cv2.waitKey(1) & 0xFF == 27:  # Ожидаем нажатие ESC 
             break
 
-main()
+print(__name__)
+exit()
+if __name__ == "_main_":
+    main()
