@@ -83,7 +83,7 @@ class handDetector():
             cv2.line(img, (x1, y1), (x2, y2), (20, 120, 220), t)
 
         length = math.sqrt((x2-x1)**2 + (y2 - y1)**2)   
-
+        return length
 
 
 
@@ -115,7 +115,6 @@ def main():
         if cv2.waitKey(1) & 0xFF == 27:  # Ожидаем нажатие ESC 
             break
 
-print(__name__)
-exit()
+
 if __name__ == "_main_":
     main()
